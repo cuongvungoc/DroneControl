@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Drone Control</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" rel="stylesheet" type="text/css" />
+  <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="http://jdewit.github.io/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.0/leaflet.awesome-markers.css"
+    rel="stylesheet" type="text/css" />
+
+  <!-- <link href="example_2.css" rel="stylesheet" type="text/css" /> -->
+
+  <!-- add -->
+  <!-- leaflet css -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" /> -->
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- leaflet js  -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://script.google.com/macros/s/AKfycbxzi1TyHYRdHJuaYGkLZPdRx_ZNWH8Di_8usiE04w6Lg-LwIaEsly-ox8nYl-LIZ4MUFw/exec?ID=1SoBzH4hPJ3y8wdaV2Z2vkz7Vi6sIOEuQB8sMCBoHyLg&SH=SHeet1&func=ReadAll
+"></script>
+
+</head>
+
+<body>
+  
+  <div id="header">
+    <img src="../code/img/header1.png" />
+  </div>
+
+  <div id="map">
+    <div class="leaflet-control coordinate"></div>
+
+  </div>
+  <footer class="lp">
+    <div class="transport">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li class="ctrl">
+              <a id="play-pause" href="#"><i id="play-pause-icon" class="fa fa-play fa-lg"></i></a>
+            </li>
+            <li class="ctrl dropup">
+              <a id="clock-btn" class="clock" data-toggle="dropdown" href="#">
+                <span id="cursor-date"></span><br />
+                <span id="cursor-time"></span>
+              </a>
+            </li>
+          </ul>
+          <ul class="nav pull-right">
+            <li>
+              <div id="time-slider"></div>
+            </li>
+            <li class="ctrl dropup">
+              <a id="speed-btn" data-toggle="dropdown" href="#"><i class="fa fa-dashboard fa-lg"></i> <span
+                  id="speed-icon-val" class="speed">1</span>x</a>
+              <div class="speed-menu dropdown-menu" role="menu" aria-labelledby="speed-btn">
+                <label>Playback<br />Speed</label>
+                <input id="speed-input" class="span1 speed" type="text" value="1" />
+                <div id="speed-slider"></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  <script src="http://jdewit.github.io/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.0/leaflet.awesome-markers.js"></script>
+
+  <script src="../dist/LeafletPlayback.js"></script>
+  <script src="../code/testco.js"></script>
+
+  <script src="footercontrol.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
